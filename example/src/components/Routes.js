@@ -27,7 +27,7 @@ export default function Routes () {
   return (
     <Router history={hashHistory}>
       <Route path='/' component={App}>
-        <IndexRoute component={Home} breadcrumb={<i className='fa fa-home' />} />
+        <IndexRoute component={Home} breadcrumb='Home' />
 
         <Route path='products' component={Products} breadcrumb='Products' />
         <Route path='products/:id' component={Product} breadcrumb={{ componentCacheKey: 'product' }}>
